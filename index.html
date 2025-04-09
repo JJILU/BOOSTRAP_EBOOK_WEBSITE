@@ -18,7 +18,7 @@
     </style>
   </head>
   <body>
-    <!-- navbar -->
+    <!-- navbar: Navbar -->
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-xxl">
         <a href="#info" class="navbar-brand">
@@ -39,7 +39,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- navbar links -->
+        <!-- navbar links: Navbar -->
         <div
           class="collapse navbar-collapse justify-content-end align-center"
           id="main-nav"
@@ -55,7 +55,7 @@
       </div>
     </nav>
 
-    <!-- main image & intro text -->
+    <!-- main image & intro text:Grid -->
     <section id="intro">
       <div class="container-lg">
         <div class="row justify-content-center align-items-center">
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <!--  pricing plans -->
+    <!--  pricing plans:Grid & Card -->
     <section id="pricing" class="bg-light mt-5">
       <div class="container-lg">
         <div class="text-center">
@@ -135,9 +135,132 @@
       </div>
     </section>
 
-    <!-- topics at a glance -->
+    <!-- topics at a glance: Accordian -->
+    <section id="topics">
+      <div class="container-md">
+        <div class="text-center">
+          <h2>Inside the Book...</h2>
+          <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+        </div>
 
-    <!-- reviews list -->
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+          <!-- column 1 -->
+          <div class="col-6 col-lg-4">
+            <img src="./assets/kindle.png" alt="ebook" class="img-fluid">
+          </div>
+
+          <!-- column 2 -->
+          <div class="col-lg-6">
+          <!-- accordion -->
+        <div class="accordion" id="chapters">
+          <!-- accordian item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                Chapter 1 - Your First Web Page
+              </button>
+            </h2>
+            <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- accordian item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-2">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
+                Chapter 2 - Mastering CSS
+              </button>
+            </h2>
+            <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+                </p>
+              </div>
+            </div>
+          </div>
+           <!-- accordian item 3 -->
+          <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-3">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
+              Chapter 3 - Storing Data (Firebase Firestore)
+            </button>
+          </h2>
+          <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+              </p>
+            </div>
+          </div>
+        </div>
+         <!-- accordian item 4 -->
+         <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-4">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4">
+              Chapter 4 - The Power Of Javascript
+            </button>
+          </h2>
+          <div id="chapter-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+              </p>
+            </div>
+          </div>
+        </div>
+         <!-- accordian item 5 -->
+         <div class="accordion-item">
+          <h2 class="accordion-header" id="heading-5">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="true" aria-controls="chapter-5">
+              Chapter 5 - User Authentication
+            </button>
+          </h2>
+          <div id="chapter-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#chapters">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor laboriosam obcaecati ab aperiam facilis suscipit nulla dolore explicabo velit provident tempora sed cupiditate aliquam numquam, quam vel libero eos!
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+        </div>
+
+    </section>
+
+    <!-- reviews list - List Group -->
+     <section id="reviews" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Book Reviews</h2>
+          <p class="lead">What my readers have said about the book...</p>
+        </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="list-group">
+            <div class="list-group-item py-3">
+              <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+              <p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet tempora iste esse impedit doloribus. Sapiente praesentium unde excepturi culpa soluta aliquid, quidem doloribus nihil fugiat natus, a repellendus quas laudantium.</p>
+              <small>Review by Tommy</small>
+            </div>
+          </div>
+        </div>
+      </div> 
+      </div>
+     </section>
 
     <!-- contact form -->
 
